@@ -1,2 +1,2 @@
 # AgulhaMagica
-This is my first project. A WebSite was created for an a company specialized in sewing
+Este projeto ainda está em andamento e, durante seu desenvolvimento, quaisquer problemas, sejam de responsividade, erros ou outros tipos, serão resolvidos antes da conclusão final. Agradeço a compreensão de todos!
