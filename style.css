@@ -358,3 +358,18 @@ section.module.parallax-2 .slogan-parallax-2:hover {
     text-shadow: 1px 1px 1px #000000;
     border: 1px solid #000;
 }
+.footer p{
+    text-align: center;
+    background-color: #DBDFE3;
+    color: #000;
+    font-weight: bold;
+}
+.footer a{
+    font-size: 1.1rem;
+}
+.footer a:visited{
+    text-decoration: none;
+}
+.footer span{
+    color: red;
+}
