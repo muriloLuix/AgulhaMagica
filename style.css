@@ -301,72 +301,6 @@ h1{
 
 /* Mobile Style */
 
-.btn-open-menu i{
-    color: #7a2cbf;
-    font-size: 40px;
-}
-
-.menu-mobile {
-    background-color: #000;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 99999;
-    width: 0%;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.menu-mobile.open-menu{
-    width: 70%;
-}
-
-.menu-mobile.open-menu ~ .overlay-menu{
-    display: block;
-}
-
-
-.menu-mobile nav ul{
-    text-align: right;
-}
-
-header .menu-mobile nav ul li a{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 300;
-    padding: 20px 8%;
-    display: block;
-}
-
-.menu-mobile nav ul li a:hover{
-    background-color: #7a2cbf;
-    color: #000;
-}
-
-.menu-mobile .btn-close{
-    padding: 20px 5%;
-}
-
-.menu-mobile .btn-close i{
-    color: #7a2cbf;
-    font-size: 30px;
-}
-
-.overlay-menu{
-    background-color: #000000a7;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 88888;
-    display: none;
-}
-
-.btn-open-menu{
-    display: none;
-}
 
 /* About Style */
 
@@ -806,11 +740,15 @@ footer .line-footer__street p a{
     }
 
     .navigation-auto div:not(:last-child){
-        margin-right: 0;
+        margin-right: -20%;
     }
 
     .slide img{
         width: 450px;
+    }
+    
+    .navigation-auto{
+        width: 20em;
     }
 
     /* Footer Style */
