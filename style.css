@@ -12,6 +12,11 @@
     scroll-behavior: smooth;
 }
 
+html,
+body{
+    background: #000;
+}
+
 .flex{
     display: flex;
 }
@@ -19,6 +24,34 @@
 .interface{
     padding: 40px 4%;
 }
+
+h1 span{
+    color: #ff0404;
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+ 
+::-webkit-scrollbar-track {
+    background-color: #000; 
+}
+  
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #6a040f;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+  
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c91023;
+}
+::-webkit-scrollbar-thumb:focus{
+    border-radius: 20px;
+}   
 
 /* Header Style */
 
@@ -126,6 +159,7 @@ section.module.parallax::after {
 section.module.parallax-1{
     background-image: url(fundo.png);
 } 
+
 section.module.parallax .slogan-parallax {
     color: #ffffff;
     text-align: center;
@@ -161,11 +195,84 @@ h1{
 }
   @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
 
+/* Mobile Style */
+
+.btn-open-menu i{
+    color: #7a2cbf;
+    font-size: 40px;
+}
+
+.menu-mobile {
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.open-menu{
+    width: 70%;
+}
+
+.menu-mobile.open-menu ~ .overlay-menu{
+    display: block;
+}
+
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+header .menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #7a2cbf;
+    color: #000;
+}
+
+.menu-mobile .btn-close{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-close i{
+    color: #7a2cbf;
+    font-size: 30px;
+}
+
+.overlay-menu{
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.btn-open-menu{
+    display: none;
+}
 
 /* About Style */
 
 section.about{
     padding: 80px 4%;
+}
+
+.flex-about{
+    display: flex;
+    align-items: center;
 }
 
 h2.title{
@@ -176,11 +283,7 @@ h2.title{
     font-weight: 600;
 }
 
-.about .flex{
-    align-items: center;
-}
-
-.about img{
+.flex-about img{
     width: 22em;
     border-radius: 40px;
     margin: 0px 3em;
@@ -189,7 +292,7 @@ h2.title{
     border: 2px solid #ffffff1f;
 }
 
-.about img:hover{
+.flex-about img:hover{
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffff79;
 }
@@ -225,7 +328,12 @@ section.about p {
     box-shadow: rgba(106, 4, 15, 0.4) 5px 5px, rgba(106, 4, 15, 0.3) 10px 10px, rgba(106, 4, 15, 0.2) 15px 15px, rgba(106, 4, 15, 0.1) 20px 20px, rgba(106, 4, 15, 0.05) 25px 25px;
 
 }
-.container {
+
+.general-container{
+    box-shadow: 0 0 40px 10px #ffffff18;
+}
+
+.container-form, .flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,6 +387,24 @@ form textarea {
     margin-bottom: 30px;
     transition: all 0.5s;
 }
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; 
+    left: 95vw; 
+    z-index: 999999;
+    transition: .2s;
+}
+
+.whatsapp-icon:hover{
+    transform: scale(1.09);
+}
+  
+.whatsapp-icon i {
+font-size: 40px; 
+color: #25d366; 
+}
+  
 form textarea:focus {
     border-radius: 10px;
     border: 1px solid #000000;
@@ -301,9 +427,7 @@ form button:hover {
 .wrapper2{
     width: 100%;
     margin: 0 auto;
-}
-section.module.parallax-1-2{
-    background-image: url(fundo2.png);
+    background: #000;
 }
 section.module.parallax-2{
     display: flex;
@@ -321,16 +445,21 @@ section.module.parallax-2{
 
 
 .slogan-parallax-2 {
-    text-shadow: 1px 1px 1px #000000;
     max-width: 80%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     line-height: 2;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     margin: 0 auto;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #000000;
+    background: #000;
+    color: #fff;
 }
 section.module.parallax-2 .slogan-parallax-2 {
     color: #ffffff;
@@ -402,6 +531,13 @@ footer{
     background: #000;
 }
 
+.flex-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .logo-footer img{
     width: 100px;
     height: 100px;
@@ -445,4 +581,101 @@ footer .line-footer p i {
 footer .line-footer p a{
     color: #fff;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+    /* General Styles */
+
+    .flex{
+        flex-direction: column;
+    }
+
+    /* Header Style */
+
+    .menu-container{
+        display: none;
+    }
+
+    section.module.parallax .slogan-parallax{
+        font-size: 30px;
+    }
+
+    section.module.parallax .slogan-parallax:hover {
+        font-size: 30px;
+    }
+
+    .whatsapp-icon {
+        left: 85vw; 
+        z-index: 999999;
+        transition: .2s;
+    }
+
+/* Wrapper Style */
+
+section.module.parallax-1 {
+    background-image: url(fundo.png);
+    background-size: cover;
+    background-position: -50px 0;
+}
+
+section.module.parallax::after {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: -50px 0;
+    z-index: 8;
+}
+    /* About Style */
+
+    h2.title{
+        font-size: 30px;
+    }
+
+    .flex-about p{
+        font-size: 20px;
+    }
+
+    .flex-about{
+        flex-direction: column;
+    }
+
+    .flex-about img{
+        margin-top: 2em;
+        box-shadow: 0 0 7px #ffffff79;
+    }
+
+    .flex-about img:hover{
+        transform: none;
+    }
+
+    /* Form Style */
+
+    .slogan-parallax-2{
+        margin-bottom: 1em;
+    }
+
+    .form, .contato{
+        margin-left: 0px;
+        max-width: 9em;
+        margin-bottom: 2em;
+    }
+
+    .localizacao{
+        max-width: 22em;
+    }
+
+    /* Footer Style */
+
+    footer .line-footer p i {
+        color: #6a040f;
+        font-size: 19px;
+    }
+
+    /* Mobile Style */
+
+    .btn-open-menu{
+        display: block;
+    }
 }

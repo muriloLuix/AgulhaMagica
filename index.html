@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
     <!-- Final Google Fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Agulha Mágica Bordados</title>
 </head>
@@ -32,45 +33,72 @@
                     </a>
                 </ul>
             </nav>
+
+            <div class="btn-open-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-open-menu-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-close">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--btn-close-->
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#specialties-menu">Skills</a></li>
+                        <li><a href="#about-menu">About</a></li>
+                        <li><a href="#portfolio-menu">Project</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
         </header>
         </div>
         <div class="wrapper">
             <main>
                 <section class="module parallax parallax-1">
                     <h1 class="slogan-parallax">Agulha Mágica<br>Bordados
-                </section><!--module parallax parallax-1-->
-                <section class="module content">         
+                </section><!--module parallax parallax-1-->   
                     <section id="about" class="about">
                         <h2 class="title">SOBRE NÓS<span>.</span></h2>
                         <div class="interface">
-                            <div class="flex">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut esse illum id voluptate ipsa nemo maiores qui ut fuga quos atque distinctio officiis officia dolor error, incidunt perspiciatis, repellat sapiente?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem porro sint reiciendis aliquam ipsum. Deleniti aliquid eaque dolores quis similique debitis officia nisi odio atque, sed eveniet expedita, facere culpa?</p>
-                                <img src="logo_sem_fundo.png" alt="Logo Agulha">
-                            </div>
+                                <div class="flex-about">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut esse illum id voluptate ipsa nemo maiores qui ut fuga quos atque distinctio officiis officia dolor error, incidunt perspiciatis, repellat sapiente?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem porro sint reiciendis aliquam ipsum. Deleniti aliquid eaque dolores quis similique debitis officia nisi odio atque, sed eveniet expedita, facere culpa?</p>
+                                    <img src="logo_sem_fundo.png" alt="Logo Agulha">
+                                </div><!--flex-about-->
                         </div>
-                    </section>
                 </section><!--module content-->
-                    <div class="wrapper2">
-                            <section class="module parallax-2 parallax-1-2">
-                                <h1 class="slogan-parallax-2">CONTATO</h1>
+                <div class="whatsapp-icon">
+                    <a href="https://wa.me//5541987837998?text=Ol%C3%A1!%20Preciso%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os!" target="_blank">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                  </div>
+                  <div class="general-container">
+                    <h1 id="contato" class="slogan-parallax-2">CONTATO<span>.</span></h1>
+                    <div class="container-form">
+                              <div class="flex">
+                                <section class="form">
+                                    <form action="https://api.staticforms.xyz/submit" method="post">
+                                    <label>NOME</label>
+                                    <input type="text" name="name" placeholder="Digite seu nome" autocomplete="on" required>
+                                    <label>E-MAIL</label>
+                                    <input type="email" name="email" placeholder="Digite seu E-mail" autocomplete="on" required>
+                                    <label>MENSAGEM</label>
+                                    <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                                    <button type="submit">Enviar</button>
+                                    <input type="hidden" name="accessKey" value="ed65ecb3-53af-4e69-95d9-e9884a5537d7">
+                                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+                                </form>
                             </section>
-                    </div>
-                    <div id="contato" class="container">
-                        <section class="form">
-                            <form action="https://api.staticforms.xyz/submit" method="post">
-                            <label>NOME</label>
-                            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="on" required>
-                            <label>E-MAIL</label>
-                            <input type="email" name="email" placeholder="Digite seu E-mail" autocomplete="on" required>
-                            <label>MENSAGEM</label>
-                            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-                            <button type="submit">Enviar</button>
-                            <input type="hidden" name="accessKey" value="ed65ecb3-53af-4e69-95d9-e9884a5537d7"> 
-                            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
-                        </form>
-                    </section>
-                    <iframe class="localizacao" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14399.18560125208!2d-49.2620664!3d-25.545158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb856df5a7a1%3A0x241a53b08f52e800!2sAgulha%20M%C3%A1gica%20Bordados!5e0!3m2!1spt-BR!2sbr!4v1695503895348!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                            <iframe class="localizacao" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14399.18560125208!2d-49.2620664!3d-25.545158!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb856df5a7a1%3A0x241a53b08f52e800!2sAgulha%20M%C3%A1gica%20Bordados!5e0!3m2!1spt-BR!2sbr!4v1695503895348!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                    </div><!--container-->
+                  </div>
                 </section>
             </main>
         </div>
@@ -79,9 +107,9 @@
         <footer>
             <div class="interface">
                 <div class="line-footer">
-                    <div class="flex">
+                    <div class="flex-footer">
                         <div class="btn-social">
-                            <a  target="_blank" href="https://instagram.com/agulha.magica_bordados?igshid=MzMyNGUyNmU2YQ=="><button><i class="bi bi-instagram"></i></button></a>
+                            <a target="_blank" href="https://instagram.com/agulha.magica_bordados?igshid=MzMyNGUyNmU2YQ=="><button><i class="bi bi-instagram"></i></button></a>
                         </div><!--btn-social-->
                     </div><!--flex-->
                 </div><!--line-footer-->
@@ -90,6 +118,5 @@
                 </div><!--line-footer-->
             </div><!--interface-->
         </footer>
-    <script src="script.js"></script>
 </body>
 </html>
