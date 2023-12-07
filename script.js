@@ -1,4 +1,4 @@
-alert("Esse site ainda está em desenvolvimento pelo criador!")
+alrt("Esse site ainda está em desenvolvimento pelo criador!")
 
 // window.prompt
 // window.alert
