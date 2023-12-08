@@ -354,6 +354,7 @@ section.about p {
     background-color: #6a040f;
     padding: 20px;
     border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
     z-index: 2;
     top: 50%;
     left: 0; 
@@ -387,6 +388,7 @@ form button {
     text-align: center; 
     margin: 0 auto;
     text-shadow: 1px 1px 1px black;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form form {
@@ -394,6 +396,7 @@ form button {
     flex-direction: column;
     width: 100%;
     height: auto;
+    font-family: 'Poppins', sans-serif;
 }
 form label {
     color: #f5f5f5;
@@ -701,6 +704,10 @@ footer .line-footer__street p a{
         font-size: 20px;
     }
 
+    section.about p{
+        letter-spacing: 1px;
+    }
+
     .flex-about{
         flex-direction: column;
     }
@@ -723,7 +730,7 @@ footer .line-footer__street p a{
     .form, .contato{
         margin-left: 0px;
         max-width: 9em;
-        margin-bottom: 2em;
+        font-family: 'Poppins', sans-serif;
     }
 
     .localizacao{
@@ -739,10 +746,6 @@ footer .line-footer__street p a{
         width: 20em;
     }
 
-    .navigation-auto div:not(:last-child){
-        margin-right: -20%;
-    }
-
     .slide img{
         width: 450px;
     }
@@ -752,6 +755,10 @@ footer .line-footer__street p a{
     }
 
     /* Footer Style */
+
+    footer{
+        padding: 20px;
+    }
 
     footer .line-footer p i {
         color: #6a040f;
