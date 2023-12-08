@@ -539,35 +539,39 @@ section.module.parallax-2 .slogan-parallax-2:hover {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #6c757d;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
     flex-direction: column;
 }
 .text{
     font-size: 45px;
     color: #f5f5f5;
     margin-bottom: 30px;
+    letter-spacing: 5px;
     text-shadow: 1px 1px 1px #000000;
 }
 .paragrafo{
     color: #f5f5f5;
     margin-bottom: 50px;
+    letter-spacing: 5px;
     text-shadow: 1px 1px 1px #000000;
 }
 .btn{
     padding: 15px 55px;
     background: #f5f5f5;
     text-decoration: none;
-    color: #6c757d;
+    color: #000;
     font-size: 18px;
     transition: all 0.5s; 
 }
 .btn:hover{
     border-radius: 16px;
-    text-shadow: 1px 1px 1px #000000;
-    border: 1px solid #000;
+    background: 000;
+    color: #fff;
+    border: 1px solid #fff;
 }
 footer{
-    padding: 40px 4%;
+    padding: 0px 4%;
     box-shadow: 0 0 40px 10px #ffffff18;
     background: #000;
 }
@@ -653,6 +657,23 @@ footer .line-footer__street p a{
     margin-top: 10px;
 }
 
+.flex-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-personal{
+    color: #ffffff23;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-personal a{
+    text-decoration: underline;
+    color: #ffffff23;
+}
+
 
 
 @media screen and (max-width: 1100px) {
@@ -732,6 +753,11 @@ footer .line-footer__street p a{
         margin-bottom: 1em;
     }
 
+    .form{
+        box-shadow: rgba(106, 4, 15, 0.4) 0px 5px, rgba(106, 4, 15, 0.3) 0px 10px, rgba(106, 4, 15, 0.2) 0px 15px, rgba(106, 4, 15, 0.1) 0px 20px, rgba(106, 4, 15, 0.05) 0px 25px;
+
+    }
+
     .form, .contato{
         margin-left: 0px;
         max-width: 9em;
@@ -781,5 +807,44 @@ footer .line-footer__street p a{
 
     .btn-open-menu{
         display: block;
+    }
+
+    /* Obrigado Style */
+
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family: 'Poppins', sans-serif;
+        background: #000;
+        flex-direction: column;
+    }
+    .text{
+        font-size: 30px;
+        margin-bottom: 30px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    .paragrafo{ 
+        font-size: 13px;
+        text-align: center;
+    }
+    .btn{
+        padding: 15px 55px;
+        background: #f5f5f5;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        transition: all 0.5s; 
+    }
+    .btn:hover{
+        border-radius: 16px;
+        background: 000;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+    .btn:focus{
+        transform: scale(0.5);
     }
 }
