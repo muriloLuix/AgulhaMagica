@@ -344,6 +344,11 @@ section.about p {
     font-size: 22px;
     text-align: justify;
     letter-spacing: 3px;
+    line-height: 25px;
+}
+
+section.about p strong{
+    color: #6a040f;
 }
 /* Form Style */
 
